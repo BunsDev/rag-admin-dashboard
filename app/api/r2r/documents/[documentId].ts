@@ -2,9 +2,7 @@
 // import { NextResponse } from 'next/server';
 
 
-export async function DELETE(request?: any
-                               // Request
-                            ) {
+export async function DELETE() {
   console.log({ request })
   try {
     const filters = {
