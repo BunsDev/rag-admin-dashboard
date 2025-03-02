@@ -27,11 +27,12 @@ export async function DELETE(request) {
     if (response.ok) {
       console.log(`Document deleted successfully: ${documentId}`)
       // logger.info(`Document deleted successfully: ${documentId}`)
-      return res.status(200).json({
-        success: true,
-        message: `Document ${documentId} deleted successfully`,
-        statusCode: response.status
-      })
+      return response.ok 
+      //   res.status(200).json({
+      //   success: true,
+      //   message: `Document ${documentId} deleted successfully`,
+      //   statusCode: response.status
+      // })
     }
 
     const errorText = await response.text()
