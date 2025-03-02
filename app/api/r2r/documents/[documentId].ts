@@ -34,7 +34,9 @@ export async function DELETE(request) {
     }
 
     const errorText = await response.text()
-    logger.error(`Delete failed with status ${response.status}: ${errorText}`)
+    console.log( response.status )
+    console.log({ errorText })
+    // logger.error(`Delete failed with status ${response.status}: ${errorText}`)
     
     return res.status(response.status).json({
       success: false,
@@ -44,7 +46,8 @@ export async function DELETE(request) {
 
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred'
-    logger.error(`Unexpected error during document deletion: ${errorMessage}`)
+    console.log({ errorMessage })
+    // logger.error(`Unexpected error during document deletion: ${errorMessage}`)
     
     return res.status(500).json({
       success: false,
