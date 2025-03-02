@@ -3,8 +3,8 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 export interface InputProps {
-  className?: any;
-  type?: any;
+  className?: string;
+  type?: string;
 }
  // extends React.InputHTMLAttributes<HTMLInputElement> {}
 
