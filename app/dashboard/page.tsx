@@ -79,11 +79,11 @@ const AdminDashboard = () => {
     }
   };
 
-  const handleUploadComplete = () => {
-    setShowUploadModal(false);
-    getDocumentsOverview(); // Refresh the document list after upload
-    setNotification('Document uploaded successfully');
-  };
+  // const handleUploadComplete = () => {
+  //   setShowUploadModal(false);
+  //   getDocumentsOverview(); // Refresh the document list after upload
+  //   setNotification('Document uploaded successfully');
+  // };
 
   return (
     <div className="p-8 max-w-6xl mx-auto">
