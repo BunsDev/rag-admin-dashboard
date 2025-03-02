@@ -25,7 +25,8 @@ export async function DELETE(request) {
     )
 
     if (response.ok) {
-      logger.info(`Document deleted successfully: ${documentId}`)
+      console.log(`Document deleted successfully: ${documentId}`)
+      // logger.info(`Document deleted successfully: ${documentId}`)
       return res.status(200).json({
         success: true,
         message: `Document ${documentId} deleted successfully`,
