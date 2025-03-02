@@ -48,9 +48,9 @@ const AdminDashboard = () => {
     }
   }, [showUploadModal]);
 
-  const handleSearch = (e) => {
-    setSearchTerm(e.target.value);
-  };
+  // const handleSearch = (e) => {
+  //   setSearchTerm(e.target.value);
+  // };
 
   const filteredDocs = documents.filter(doc =>
     doc.title.toLowerCase().includes(searchTerm.toLowerCase())
