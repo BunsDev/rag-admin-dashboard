@@ -3,6 +3,8 @@
 
 
 export async function DELETE(request) {
+  const { documentId } = request.params; // or request.body, depending on how `documentId` is sent
+
   console.log({ request })
   try {
     const filters = {
