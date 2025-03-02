@@ -34,6 +34,7 @@ const AdminDashboard = () => {
       setError('Failed to load documents. Please try again later.');
     } finally {
       setIsLoading(false);
+      setSearchTerm(searchTerm);
     }
   };
 
