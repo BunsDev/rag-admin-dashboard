@@ -103,7 +103,7 @@ const AdminDashboard = () => {
               <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-500" />
               <Input
                 type="text"
-                placeholder="Search documents..."
+                //placeholder="Search documents..."
                 className="pl-8"
                 value={searchTerm}
                 onChange={handleSearch}
