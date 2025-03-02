@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import FileUploadComponent from './FileUploadComponent';
+// import FileUploadComponent from './FileUploadComponent';
 
 const AdminDashboard = () => {
   const [documents, setDocuments] = useState([]);
@@ -138,7 +138,7 @@ const AdminDashboard = () => {
           {showUploadModal && (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
               <div className="bg-white rounded-lg w-full max-w-2xl">
-                <FileUploadComponent onUploadComplete={handleUploadComplete} />
+{/*                 <FileUploadComponent onUploadComplete={handleUploadComplete} /> */}
                 <div className="p-4 bg-gray-50 rounded-b-lg flex justify-end">
                   <Button 
                     variant="outline" 
