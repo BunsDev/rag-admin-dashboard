@@ -52,6 +52,7 @@ const FileUploadComponent = () => {
       console.log('Upload response:', response);
       
       const result = await response.json();
+      console.log({ result });
 
       setNotification({ type: 'success', message: 'Files uploaded successfully!' });
       setFiles([]); // Clear files after successful upload
