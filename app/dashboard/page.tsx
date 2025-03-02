@@ -105,8 +105,8 @@ const AdminDashboard = () => {
                 type="text"
                 //placeholder="Search documents..."
                 className="pl-8"
-                value={searchTerm}
-                onChange={handleSearch}
+                // value={searchTerm}
+                // onChange={handleSearch}
               />
             </div>
             <Button 
