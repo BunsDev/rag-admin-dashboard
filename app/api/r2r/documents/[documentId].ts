@@ -39,22 +39,24 @@ export async function DELETE(request) {
     console.log({ errorText })
     // logger.error(`Delete failed with status ${response.status}: ${errorText}`)
     
-    return res.status(response.status).json({
-      success: false,
-      message: `Failed to delete document: ${errorText || response.statusText}`,
-      statusCode: response.status
-    })
+    return response.status 
+    //   res.status(response.status).json({
+    //   success: false,
+    //   message: `Failed to delete document: ${errorText || response.statusText}`,
+    //   statusCode: response.status
+    // })
 
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred'
     console.log({ errorMessage })
     // logger.error(`Unexpected error during document deletion: ${errorMessage}`)
     
-    return res.status(500).json({
-      success: false,
-      message: `Failed to delete document: ${errorMessage}`,
-      statusCode: 500
-    })
+    return errorMessage 
+    //   res.status(500).json({
+    //   success: false,
+    //   message: `Failed to delete document: ${errorMessage}`,
+    //   statusCode: 500
+    // })
   }
 }
 
